@@ -1,0 +1,206 @@
+#info-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#info-2 #sub-info-2-container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info-2 #sub-info-2-container .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#info-2 #sub-info-2-container .options h1 {
+  margin-top: 5%;
+}
+
+#info-2 #sub-info-2-container #info-2-1 {
+  display: none;
+}
+
+#info-2 #sub-info-2-container #info-2-1 img {
+  width: 60%;
+}
+
+#info-2 #sub-info-2-container #info-2-1 p {
+  font-size: 17px;
+  color: #838383;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#info-2 #sub-info-2-container #info-2-1 a {
+  padding: 1.8%;
+  width: 140px;
+  background-color: white;
+  border: #0099ff 4px solid;
+  color: #0099ff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#info-2 #sub-info-2-container #info-2-1 a:hover {
+  background-color: #0099ff;
+  color: white;
+}
+
+#info-2 #sub-info-2-container #info-2-2 {
+  display: none;
+}
+
+#info-2 #sub-info-2-container #info-2-2 img {
+  width: 60%;
+}
+
+#info-2 #sub-info-2-container #info-2-2 p {
+  font-size: 17px;
+  color: #838383;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#info-2 #sub-info-2-container #info-2-2 a {
+  padding: 1.8%;
+  width: 140px;
+  background-color: white;
+  border: #0099ff 4px solid;
+  color: #0099ff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#info-2 #sub-info-2-container #info-2-2 a:hover {
+  background-color: #0099ff;
+  color: white;
+}
+
+#info-2 #sub-info-2-container #info-2-3 {
+  display: none;
+}
+
+#info-2 #sub-info-2-container #info-2-3 img {
+  width: 60%;
+}
+
+#info-2 #sub-info-2-container #info-2-3 p {
+  font-size: 17px;
+  color: #838383;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#info-2 #sub-info-2-container #info-2-3 a {
+  padding: 1.8%;
+  width: 140px;
+  background-color: white;
+  border: #0099ff 4px solid;
+  color: #0099ff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#info-2 #sub-info-2-container #info-2-3 a:hover {
+  background-color: #0099ff;
+  color: white;
+}
+
+.info-2-title {
+  font-size: 2rem;
+  background-color: white;
+  border: none;
+  color: #cecece;
+  border-bottom: 4px #cecece  solid;
+  margin: 0 2% 0 2%;
+
+}
+.info-2-title:hover {
+  color: #a8a8a8;
+  border-bottom: 4px #a8a8a8  solid;
+}
+
+.showTitleInfo2 {
+  color: #0099ff !important;
+  border-color: #0099ff !important;
+}
+
+.showInfo2 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #info-2-1 div {
+    text-align: center;
+  }
+  #info-2-2 div {
+    text-align: center;
+  }
+  #info-2-3 div {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #info-2 {
+    margin-top: 100px;
+  }
+  #sub-info-1-container {
+    width: 90% !important;
+  }
+  .options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .options .info-2-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=info-2.css.map */

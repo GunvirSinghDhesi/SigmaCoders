@@ -1,0 +1,160 @@
+@import "./colors.scss";
+
+#info-2{
+    display: flex;
+    justify-content: center;
+    #sub-info-2-container{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .options{
+            display: flex;
+            justify-content: center;
+            h1{
+                margin-top: 5%;
+            }
+        }
+        #info-2-1{
+            display: none;
+            img{
+                width: 60%;
+            }
+            p{
+                font-size: 17px;
+                color: $soft-grey;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-weight: 400;
+                padding-bottom: 20px;
+                width: 100%;
+            }
+            a{
+                padding: 1.8%;
+                width: 140px;
+                background-color: $white;
+                border: $blue 4px solid;
+                color: $blue;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+        #info-2-2{
+            display: none;
+            img{
+                width: 60%;
+            }
+            p{
+                font-size: 17px;
+                color: $soft-grey;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-weight: 400;
+                padding-bottom: 20px;
+                width: 100%;
+            }
+            a{
+                padding: 1.8%;
+                width: 140px;
+                background-color: $white;
+                border: $blue 4px solid;
+                color: $blue;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+        #info-2-3{
+            display: none;
+            img{
+                width: 60%;
+            }
+            p{
+                font-size: 17px;
+                color: $soft-grey;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-weight: 400;
+                padding-bottom: 20px;
+                width: 100%;
+            }
+            a{
+                padding: 1.8%;
+                width: 140px;
+                background-color: $white;
+                border: $blue 4px solid;
+                color: $blue;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+
+    }
+}
+.info-2-title{
+    font-size: 2rem;
+    background-color: $white;
+    border: none;
+    color: #e0e0e0 ;
+    border-bottom: 4px #e0e0e0  solid;
+    margin: 0 2% 0 2%;
+}
+.showTitleInfo2{
+    color: $blue !important;
+    border-color: $blue !important;
+}
+.showInfo2{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: $ipad){
+    #info-2-1{
+        div{
+            text-align: center;
+        }
+    }
+    #info-2-2{
+        div{
+            text-align: center;
+        }
+    }
+    #info-2-3{
+        div{
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: $phone){
+    #info-2{
+        margin-top: 100px;
+    }
+    #sub-info-1-container{
+        width: 90% !important;
+    }
+    .options{
+        flex-direction: column;
+        .info-2-title{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}

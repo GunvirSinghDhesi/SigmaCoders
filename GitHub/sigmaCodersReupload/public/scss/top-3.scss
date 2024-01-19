@@ -1,0 +1,175 @@
+@import "./colors.scss";
+
+
+
+#top-3
+{
+    // Div sizing - This will outline the porperties of the entire element(size, position, etc.)
+    .extension-container{
+        width: 100vw;
+        height: 650px;
+        margin: 50px 0px;
+    }
+
+    // Text Portion - This will contain the text above the graphic in the element
+
+    .extension-top{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 30px;
+            color: rgb(59, 59, 59);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p{
+            font-size: 17px;
+            color: rgb(131, 131, 131);
+            letter-spacing: 1px;
+            width: 550px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 500;
+            margin-top: 10px;
+            width:600px;
+            @media only screen and (max-width: $ipad) {
+                width: auto;
+                margin: 5px 5vw;
+            }
+            @media only screen and (max-width: $phone) {
+                width: auto;
+                margin: 5px 5vw;
+            }
+        }
+    }
+
+    // Graphic Portion(Bottom) - This is the lower portion of the element which will contain a customizable element
+
+    .extension-bottom{
+        height: 500px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        // This is the default for how the box looks. There is a bunch of meddling with the margin in the flexbox in order to get the correct effect. 
+        .extension-box{
+            height: 400px;
+            width: 275px;
+            border-radius: 10px;
+            margin-right: 25px;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.185);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+            }
+            img{
+                margin-top: 0px;
+            }
+            h1{
+                font-size: 25px;
+                color: rgb(59, 59, 59);
+                text-align: center;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 17px;
+                color: rgb(131, 131, 131);
+                text-align: center;
+                font-weight: 500;  
+                margin-top: 7px;
+                margin-bottom: 50px;
+            }
+            .extension-graphic{
+                height: 1px;
+                width: 100%;
+                border-style: dotted;
+                border-color: rgb(150, 150, 150);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                margin-bottom: 25px;
+            }
+            a{
+                text-decoration: none;
+                padding: 15px;
+                border-radius: 5px;
+                border: none;
+                font-size: 17px;
+                color: white;
+                border-style: solid;
+                background-color: $blue;
+                border-color:$blue;
+                margin-bottom: -20px;
+                transition: 0.5s;
+                @media only screen and (max-width: $phone){
+                    margin-bottom: 10px; 
+                }
+            }
+            // Animation for the button on hover
+            a:hover{
+                background-color: inherit;
+                border-style: solid;
+                border-color:$blue;
+                color:$blue;
+            }
+        }
+        // These are seperate classes for the difference in position of the three boxes
+        .extension2{
+            margin-top: 50px;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+                a{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .extension3{
+            margin-top: 100px;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+                a{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: $ipad) {
+    // upper portion
+    .extension-top p{
+        width: 70vw;
+    }
+    //lower portion
+}
+@media only screen and (max-width: $phone){
+    // upper portion
+    #top-3{
+        margin-top: 100px;
+    }
+    .extension-top p{
+        width: auto;
+    }
+    //lower portion
+    .extension-bottom{
+        flex-direction: column;
+        height: 1500px;
+        width: 80%;
+        margin-top: 250px;
+        .extension-box{
+            height: 400px;
+            width: 275px;
+            margin: none;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "./colors.scss";
+
+
+.info-4{
+    margin: 7% 0 7% 0;
+    display: flex;
+    justify-content: center;
+    #sub-info-4-container{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 3%;
+        h2{ 
+            text-align: center;
+            font-size: 2.5rem;
+            color: $soft-black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: $soft-grey;
+            letter-spacing: 1px;
+            width: 550px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            width: 500px;
+            @media only screen and (max-width: $phone){
+                width: auto;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $soft-grey;
+            bottom: 0;
+            font-size: 1.3rem;
+            position: absolute;
+            transition: 0.4s;
+            &:hover{
+                font-size: 1.6rem !important;
+            }
+            @media only screen and (max-width: $phone){
+                margin-bottom: -20px;
+            }
+        }
+        .card-holder{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .card{
+                margin: 5% 0 5% 0;
+                box-shadow: 0px 0px 20px rgba(0,0,0, 0.2);
+                width: 30%;
+                border-radius: 15px;
+                .info{
+                    padding: 10px 30px;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 15px 15px 0 0;
+                }
+                h1{
+                    text-align: left;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+                h2{
+                    text-align: left;
+                    font-size: 1rem;
+                    color: $soft-grey;
+                    font-weight: 400;
+                }
+                p{
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    text-align: left;
+                }
+                .rating{
+                    display: flex;
+                    img{
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $phone){
+    .info-4{
+        margin-top: 500px;
+    }
+    .info-4-2{
+        margin: 0px 0px 26px;
+    }
+}
+

@@ -1,0 +1,81 @@
+#hdwes-quotes .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+}
+
+#hdwes-quotes .quote:nth-child(odd) {
+  background-color: #0099ff;
+  color: white;
+}
+
+#hdwes-quotes .quote:nth-child(even) {
+  color: #3b3b3b;
+}
+
+#hdwes-quotes .quote div {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hdwes-quotes .quote div p {
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#hdwes-quotes .quote div div {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hdwes-quotes .quote div div img {
+  border-radius: 30px;
+  width: 200px;
+  padding: 0 !important;
+  margin: 0 !important;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#hdwes-quotes .quote div div h4 {
+  padding: 10px !important;
+  margin: 0 !important;
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#hdwes-quotes .quote div div h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.9rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+}
+/*# sourceMappingURL=quotes.css.map */

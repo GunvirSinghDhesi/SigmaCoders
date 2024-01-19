@@ -1,0 +1,196 @@
+#info-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#info-3 #sub-info-3-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container {
+    width: 80%;
+  }
+}
+
+#info-3 #sub-info-3-container .card {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+#info-3 #sub-info-3-container .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  width: 250px;
+  height: 35vh;
+}
+
+#info-3 #sub-info-3-container .card .limage {
+  margin-right: 5%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#info-3 #sub-info-3-container .card .rimage {
+  margin-left: 5%;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#info-3 #sub-info-3-container .card .nimage {
+  margin-left: -3%;
+  width: auto !important;
+  height: 250px !important;
+}
+
+#info-3 #sub-info-3-container .card .rtext {
+  padding: 20px;
+}
+
+#info-3 #sub-info-3-container .card .rtext p {
+  width: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#info-3 #sub-info-3-container .card .rtext .special-button-info-3 {
+  text-decoration: none;
+  color: #838383;
+  border: 2px #838383 solid;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#info-3 #sub-info-3-container .card .rtext .special-button-info-3:hover {
+  color: white;
+  border-color: #0099ff;
+  background-color: #0099ff;
+}
+
+#info-3 #sub-info-3-container .card .ltext {
+  padding: 20px;
+}
+
+#info-3 #sub-info-3-container .card .ltext p {
+  width: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#info-3 #sub-info-3-container .card .ltext .special-button-info-3 {
+  text-decoration: none;
+  color: #838383;
+  border: 2px #838383 solid;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#info-3 #sub-info-3-container .card .ltext .special-button-info-3:hover {
+  color: white;
+  border-color: #0099ff;
+  background-color: #0099ff;
+}
+
+#info-3 #sub-info-3-container .card div h2 {
+  font-size: 1.8rem;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+
+#info-3 #sub-info-3-container .card div p {
+  font-size: 1rem;
+  color: #838383;
+  letter-spacing: 1px;
+  width: 550px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container #nodejs-lang {
+    height: 700px;
+  }
+  #info-3 #sub-info-3-container #nodejs-lang .ltext {
+    height: 700px;
+  }
+  #info-3 #sub-info-3-container #nodejs-lang .ltext h2 {
+    width: 175px;
+    height: auto;
+    margin: 0px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container #css-lang {
+    height: 500px;
+  }
+  #info-3 #sub-info-3-container #css-lang .rtext {
+    height: 500px;
+  }
+  #info-3 #sub-info-3-container #css-lang .rtext h2 {
+    width: 175px;
+    height: auto;
+    margin: 0px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #info-3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 70vw !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #info-3 {
+    margin-top: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 90% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=info-3.css.map */

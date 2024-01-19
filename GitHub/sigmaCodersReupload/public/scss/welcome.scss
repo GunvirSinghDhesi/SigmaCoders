@@ -1,0 +1,105 @@
+@import "./colors.scss";
+
+#index-container{
+    display: flex;
+    justify-content: center;
+}
+#sub-index-container{
+    width: 75%;
+}
+
+#welcome{
+    margin: 10% 0 10% 0;
+    display: flex;
+    .info{
+        width: 50%;
+        h1{
+            margin: 3% 0 3% 0 !important;
+            font-size: 4rem;
+            font-weight: 500;
+            color: $soft-black;
+        }
+        h6{
+            margin: 3% 0 3% 0 !important;
+            font-size: 1.6rem;
+            color: $grey;
+            font-weight: 400;
+        }
+        .btn-container{
+            display: flex;
+            .btn1{
+                border: $blue 4px solid;
+                margin-right: 2%;
+                padding: 1.8%;
+                width: 140px;
+                background-color: $blue;
+                color: $white;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    border: $red 4px solid;
+                    background-color: $red;
+                }
+            }
+            .btn2{
+                padding: 1.8%;
+                width: 140px;
+                background-color: $white;
+                border: $blue 4px solid;
+                color: $blue;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 5px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+    }
+    img{
+        display: block;
+        position: absolute;
+        right: 00px;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: $ipad)
+{
+    .info{
+        h1{
+            text-align: center !important;
+        }
+        h6{
+            text-align: center;
+        }
+    }
+    #welcome{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: $phone)
+{
+    .btn-container{
+        flex-direction: column;
+        align-items: center;
+        .btn1{
+            margin: 10% 0 5% 0 !important;
+        }
+        .btn2{
+            margin: 5% 0 10% 0 !important;
+        }
+    }
+    #sub-index-container
+    {
+        width: 95% !important;
+    }
+}

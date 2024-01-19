@@ -1,0 +1,110 @@
+@import "./colors.scss";
+
+
+nav{
+    width: 75%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    .navbrand{
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            h1{
+                padding-left: 5px;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                color: $light-black;
+                font-weight: 600;
+            }
+            img{
+                width: auto;
+                height: 40px;
+                border-radius: 30px;
+            }
+        }
+    }
+    #toggleBtn{
+        margin-left: 5%;
+        div{
+            z-index: 1000;
+            width: 30px;
+            height: 5px;
+            margin: 4px;
+            border-radius: 20px;
+            background-color: $light-black;
+            transition: 0.2s;
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        background-color: none;
+        a{
+            font-size: 1rem;
+            letter-spacing: 5px;
+            color: $light-black;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            color: $light-black;
+            &:hover{
+                color: $blue !important;
+            }
+        }
+    }
+    .show{
+        opacity: 100% !important;
+        right: 0 !important;
+    }
+}
+@media only screen and (min-width: $ipad)
+{
+    #toggleBtn{
+        display: none;
+    }
+}
+@media only screen and (max-width: $ipad)
+{
+    #toggleBtn{
+        display: block;
+    }
+    nav{
+        .links{
+            position: absolute;
+            display: flex !important;
+            flex-direction: column;
+            transition: .3s;
+            opacity: 0;
+            height: 100vh !important;
+            top: 0;
+            right: -500px;
+            padding-top: 75px;
+            padding-right: 5%;
+            background-color: $grey;
+            a{
+                margin: 10%;
+                color: $white !important;
+            }
+        }
+        #toggleBtn{
+            .one{
+                background-color: $red !important;
+                transform: rotate(-45deg) translate(0px, 12px);
+            }
+            .two{
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            .three{
+                background-color: $red !important;
+                transform: rotate(45deg) translate(0px, -13px)
+            }
+        }
+    }
+}

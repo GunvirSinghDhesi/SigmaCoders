@@ -1,0 +1,247 @@
+@import "./colors.scss";
+
+html, body{
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: $white !important;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+#web-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+// JUST LOCAL
+
+.info-1{
+    margin: 7% 0 7% 0;
+    display: flex;
+    justify-content: center;
+    #sub-info-1-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 3%;
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: $soft-black;
+            margin-bottom: 10px;
+        }
+        .package-title{
+            @media only screen and (max-width:$phone){
+                width: auto;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            color: $soft-grey;
+            letter-spacing: 1px;
+            width: 550px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            width: auto;
+        }
+        a{
+            text-decoration: none;
+            color: $soft-grey;
+            bottom: 0;
+            font-size: 1rem;
+            position: absolute;
+            transition: 0.4s;
+            &:hover{
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $ipad) {
+    #sub-info-1-container{
+        width: 70% !important;
+    }
+    #sub-info-1-container p{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width: $phone){
+    .info-1{
+        margin-top: 100px;
+    }
+    #sub-info-1-container{
+        width: 90% !important;
+    }
+    #sub-info-1-container p{
+        height: 200px;
+        width: 90vw;
+    }
+    .info-1-2{
+        margin: 0px 0px 26px;
+        height: 700px;
+    }
+}
+
+
+
+#info-1-no-a-link{
+    margin: 7% 7% 7% 7%;
+    display: flex;
+    justify-content: center;
+    #sub-info-1-no-a-link-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 3%;
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: $soft-black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: $soft-grey;
+            letter-spacing: 1px;
+            width: 550px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $blue;
+            transition: 0.4s;
+            &:hover{
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+    @media only screen and (max-width: $ipad) {
+        #sub-info-1-no-a-link-container{
+            width: 70% !important;
+        }
+        #sub-info-1-no-a-link-container p{
+            width: 70vw;
+        }
+    }
+    @media only screen and (max-width: $phone){
+        #sub-info-1-no-a-link-container{
+            width: 90% !important;
+        }
+        #sub-info-1-no-a-link-container p{
+            width: 90vw;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+#info-1-no-padding{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    #sub-info-1-no-padding-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 3%;
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: $soft-black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: $soft-grey;
+            letter-spacing: 1px;
+            width: 550px;
+            text-align: center;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            width: 500px;
+            @media only screen and (max-width: $phone){
+                width: auto;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $blue;
+            position: absolute;
+            bottom: 0;
+            font-size: 1.2rem;
+            background-color: $white;
+            padding: 10px 14px;
+            border: 4px $blue solid;
+            border-radius: 7px;
+            transition: 0.4s;
+            &:hover{
+                font-size: 1.5rem !important;
+                color: white;
+                background-color: $blue;
+            }
+            margin-bottom: -10px;
+            @media only screen and (max-width: $ipad) {
+                margin-bottom: -20px;
+            }
+            @media only screen and (max-width: $phone) {
+                margin-bottom: -30px;
+            }
+        }
+        }
+        .contact-info{
+            color: $blue !important;
+            white-space: nowrap;
+        }
+    }
+
+@media only screen and (max-width: $ipad){
+    #sub-info-1-container{
+        width: 70% !important;
+    }
+}
+@media only screen and (max-width: $phone){
+    #sub-info-1-container{
+        width: 90% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#copyright{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    color: $soft-grey;
+    h1{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+}

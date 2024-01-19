@@ -1,0 +1,137 @@
+.info-4 {
+  margin: 7% 0 7% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-4 #sub-info-4-container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 3%;
+}
+
+.info-4 #sub-info-4-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3b3b3b;
+  margin-bottom: 10px;
+}
+
+.info-4 #sub-info-4-container p {
+  font-size: 1.2rem;
+  color: #838383;
+  letter-spacing: 1px;
+  width: 550px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-4 #sub-info-4-container p {
+    width: auto;
+  }
+}
+
+.info-4 #sub-info-4-container a {
+  text-decoration: none;
+  color: #838383;
+  bottom: 0;
+  font-size: 1.3rem;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.info-4 #sub-info-4-container a:hover {
+  font-size: 1.6rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-4 #sub-info-4-container a {
+    margin-bottom: -20px;
+  }
+}
+
+.info-4 #sub-info-4-container .card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info-4 #sub-info-4-container .card-holder .card {
+  margin: 5% 0 5% 0;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  border-radius: 15px;
+}
+
+.info-4 #sub-info-4-container .card-holder .card .info {
+  padding: 10px 30px;
+}
+
+.info-4 #sub-info-4-container .card-holder .card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.info-4 #sub-info-4-container .card-holder .card h1 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.info-4 #sub-info-4-container .card-holder .card h2 {
+  text-align: left;
+  font-size: 1rem;
+  color: #838383;
+  font-weight: 400;
+}
+
+.info-4 #sub-info-4-container .card-holder .card p {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.info-4 #sub-info-4-container .card-holder .card .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-4 #sub-info-4-container .card-holder .card .rating img {
+  width: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-4 {
+    margin-top: 500px;
+  }
+  .info-4-2 {
+    margin: 0px 0px 26px;
+  }
+}
+/*# sourceMappingURL=info-4.css.map */
