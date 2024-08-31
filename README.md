@@ -1,4 +1,1 @@
-# PersonalSite
-Sigma Coders is an all in one tutoring solution for programming. At Sigma Coders our mission is to ensure success in your programming path. We are dedicated to provide you best course material in the market. We don’t only teach you programming but we also teach you practices that are used by big Tech companies like Google. We can assure you that we will make sure that you succeed in whatever you want to learn programming for, middle school, high school, college/university, or for work. Not to mention that you can also learn how to develop sites, games, and applications. At Sigma Coders we also award you for completing a language fully. Hence, if you finish a programming package or language you will recieve a certificate of completition. With this certification you can be guaranteed positions as a volunteer at different companies that have partnered with us (some conditions apply, contact us for more information).
-
-<img width="1440" alt="image" src="https://github.com/GunvirSinghDhesi/SigmaCoders/assets/137956552/483550e8-bae4-44d9-ae4d-483514c1093b">
+# sigma-coders
