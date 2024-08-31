@@ -7,7 +7,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true, useUnifiedTopology: true}));
 app.use(express.static("public"));
 
-
 app.get("/", function(req, res){
     res.render(__dirname+"/views/index.ejs", {pageName: "Home - Sigma Coders", date: new Date().getFullYear()});
 });
@@ -26,6 +25,13 @@ app.get("/hdwes", function(req, res){
 app.get("/languages", function(req, res){
     res.render(__dirname+"/views/languages.ejs", {pageName: "Languages - Sigma Coders", date: new Date().getFullYear()});
 });
-app.listen(process.env.PORT || 3000, function(){
-    console.log("port is opened on port 3000");
-});
+
+// Export the app so Vercel can handle it
+module.exports = app;
+
+// If running locally, start the server
+if (require.main === module) {
+    app.listen(process.env.PORT || 3001, function(){
+        console.log("Server is running on port 3001");
+    });
+}
