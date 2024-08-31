@@ -10,6 +10,11 @@ app.use(express.static("public"));
 require('dotenv').config();
 const myEnvVar = process.env.MY_ENV_VARIABLE;
 
+const path = require('path');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+
 
 app.get("/", function(req, res){
     res.render(__dirname+"/views/index.ejs", {pageName: "Home - Sigma Coders", date: new Date().getFullYear()});
